@@ -1,0 +1,35 @@
+html {
+  margin: 0;
+  padding: 0;
+  /*font-family: 'Ubuntu', sans-serif;*/
+  font-family: 'Libre Baskerville', serif;
+}
+
+body {
+  background-color: rgba(163, 255, 222, .8);
+}
+
+/* center text that should dissapear after entry*/
+.border h1 {
+  font-size: 8em;
+  color: rgba(115, 81, 78, 1);
+}
+
+/* main board to cover the background*/
+.board {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border {
+  height: 80vh;
+  width: 87vw;
+  border: 1px solid rgba(115, 81, 78, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
