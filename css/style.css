@@ -3,6 +3,7 @@ html {
   padding: 0;
   /*font-family: 'Ubuntu', sans-serif;*/
   font-family: 'Libre Baskerville', serif;
+  color: rgba(115, 81, 78, 1);
 }
 
 body {
@@ -13,6 +14,7 @@ body {
 .border h1 {
   font-size: 8em;
   color: rgba(115, 81, 78, 1);
+  text-align: center;
 }
 
 /* main board to cover the background*/
@@ -25,11 +27,23 @@ body {
   align-items: center;
 }
 
-.border {
+.border{
   height: 80vh;
   width: 87vw;
   border: 1px solid rgba(115, 81, 78, 1);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.bottom-nav img {
+  height: 5vw;
+  width: 5vw;
+}
+
+.swap-name {
+  color: rgba(232, 12, 73, 1);
+  font-weight: 800;
+  font-size: 1.5em;
 }
