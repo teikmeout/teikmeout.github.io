@@ -1,9 +1,6 @@
-html {
-  margin: 0;
-  padding: 0;
+body {
   /*font-family: 'Libre Baskerville', serif;*/
   font-family: helvetica;
-  /*color: rgba(115, 81, 78, 1);*/
   color: #571e59;
 }
 
@@ -50,18 +47,18 @@ html {
 
 .background {
   /*image is fixed and will remain in bg for the height amount*/
-  background: url('../images/flower.jpg') no-repeat center /*center*/ fixed;
+  background: url('../images/flower.jpg') no-repeat center /*center*/ relative;
   /*background: url('../images/flower.jpg') no-repeat center center fixed;*/
   /*background-color: red;*/
   zoom: 50%;
   max-width: 100%;
-  height: 200vh;
+  height: 100vh;
   z-index: 5;
 }
 
 .background-two {
   background: url('../images/background-two.jpg') no-repeat center fixed;
-  height: 200vh;
+  height: 100vh;
 }
 
 .divider {
