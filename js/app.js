@@ -12,7 +12,7 @@ function changeSpan() {
     console.log('change!')
     rotateWord.innerText = arrayOfDescriptions[Math.floor(Math.random() * arrayOfDescriptions.length)];
     // console.log('changed');
-  }, 3000) // end of setinterval
+  }, 2000) // end of setinterval
 
 }
 
