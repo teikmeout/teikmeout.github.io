@@ -17,10 +17,11 @@ body {
   text-align: center;
 }
 
-/* main board to cover the background*/
+/*TEMPLATE*/
+/*div template for all boards*/
 .board {
-  padding: 0;
-  margin: 0;
+  /*!!!padding: 0;
+  margin: 0;*/
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,11 +30,11 @@ body {
 }
 
 /*styling main landing div */
-.one {
+.landingPage {
   background-color: rgba(0,0,0,.3);
 }
 
-.about-me p {
+.aboutMe p {
   color: #FAFAFA;
   font-size: 10vh;
   text-align: center;
