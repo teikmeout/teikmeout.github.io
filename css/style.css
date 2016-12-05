@@ -1,10 +1,13 @@
+/*#571e59 : #a9e6a7*/
+/*#FAFAFA almost white*/
 body {
-  /*font-family: 'Libre Baskerville', serif;*/
-  font-family: helvetica;
-  color: #571e59;
+  font-family: 'Libre Baskerville', serif;
+  /*font-family: helvetica;*/
+  /*font-family: 'Droid Sans Mono', monospace;*/
+  /*color: #571e59;*/
+  color: #FAFAFA;
 }
 
-/*#571e59 : #a9e6a7*/
 
 /* center text that should dissapear after entry*/
 .border h1 {
@@ -20,8 +23,20 @@ body {
   margin: 0;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/*styling main landing div */
+.one {
+  background-color: rgba(0,0,0,.3);
+}
+
+.about-me p {
+  color: #FAFAFA;
+  font-size: 10vh;
+  text-align: center;
 }
 
 .border{
@@ -40,32 +55,52 @@ body {
 }
 
 .swap-name {
-  color: rgba(232, 12, 73, 1);
+  /*color: rgba(232, 12, 73, 1);*/
+  color: rgba(163, 255, 222, 1);
+  /*color: #571e59;*/
   font-weight: 800;
   font-size: 1.5em;
 }
 
-.background {
+/* styling the first background static div*/
+.background-one {
   /*image is fixed and will remain in bg for the height amount*/
-  background: url('../images/flower.jpg') no-repeat center /*center*/ relative;
+  background: url('../images/flower.jpg') no-repeat center /*center*/ fixed;
+  /*background-zoom: 50%;*/
   /*background: url('../images/flower.jpg') no-repeat center center fixed;*/
-  /*background-color: red;*/
-  zoom: 50%;
-  max-width: 100%;
-  height: 100vh;
+  background-size: 100%;
+  /*zoom: 50%;*/
+  width: cover;
+  height: 200vh;
   z-index: 5;
 }
 
-.background-two {
+/*PORTFOLIO div*/
+.portfolio {
   background: url('../images/background-two.jpg') no-repeat center fixed;
+  background-size: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*styling <p> tag inside of the second background image*/
+.portfolio > p {
+  display: block;
+  font-size: 10vh;
+  text-align: center;
+  color: #FAFAFA;
 }
 
 .divider {
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.divider p {
 
-#one {
-  /*background-color: rgba(163, 255, 222, .5);*/
-  background-color: #a9e6a7;
+  text-align: center;
+  color: rgb(17, 11, 22);
 }
