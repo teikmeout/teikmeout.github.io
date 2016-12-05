@@ -94,6 +94,8 @@ body {
   color: #FAFAFA;
 }
 
+/*DIVIDER DIV*/
+/*divider portion styling to uniform sizing*/
 .divider {
   height: 100px;
   display: flex;
@@ -101,7 +103,29 @@ body {
   align-items: center;
 }
 .divider p {
-
   text-align: center;
   color: rgb(17, 11, 22);
+}
+
+/*PROJECTS CONTAINER*/
+.projectContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*INDIVIDUAL PROJECT*/
+/*enclosing divs for project show*/
+.project {
+  margin: 2vw;
+  height: 20vh;
+  width: 20vh;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+/*BIG PICTURE DIV*/
+/* this is just going to have a big picture of me or food*/
+.bigPicture {
+  background: ;
 }
