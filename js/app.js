@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+// document.addEventListener("DOMContentLoaded", function(event) {
 console.log("DOM fully loaded and parsed");
 // pointer at span tag with class
 const rotateWord = document.querySelector('.swap-name');
@@ -30,4 +30,4 @@ function changeSpan() {
 changeSpan();
 
 // let intervalID = window.setInterval(changeSpan, 3000);
-});
+// });

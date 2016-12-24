@@ -158,3 +158,8 @@ body {
   -moz-box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
   box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
 }
+
+.foodPicture {
+  background: url('../images/pokeprep.jpg') no-repeat center fixed;
+  background-size: 100%;
+}
