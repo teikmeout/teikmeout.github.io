@@ -142,12 +142,18 @@ body {
   background-size: cover;
 }
 
+.project.three {
+  background: url('../images/iparkmyself.png') no-repeat center;
+  background-size: 100%;
+}
+
 /*BIG PICTURE DIV*/
 /* this is just going to have a big picture of me or food*/
 .bigPicture {
   /*border: 1px solid red;*/
-  background-size: cover;
+  /*background-height: 100%;*/
   background: url('../images/sriracha.jpg') no-repeat center;
+  background-size: 100%;
   -webkit-box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
   -moz-box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
   box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
