@@ -8,6 +8,12 @@ body {
   color: #FAFAFA;
 }
 
+.fadeout {
+  height: 100vh;
+  width: 100vw;
+  background: rbga(0,0,0,.5)
+}
+
 
 /* center text that should dissapear after entry*/
 .border h1 {
@@ -73,9 +79,10 @@ body {
   background: url('../images/flower.jpg') no-repeat center /*center*/ fixed;
   /*background-zoom: 50%;*/
   /*background: url('../images/flower.jpg') no-repeat center center fixed;*/
-  background-size: 100%;
+  /*background-size: 100%;*/
+  background-size: cover;
   /*zoom: 50%;*/
-  width: cover;
+  /*width: cover;*/
   height: 200vh;
   z-index: 5;
 }
@@ -144,7 +151,22 @@ body {
 
 .project.three {
   background: url('../images/iparkmyself.png') no-repeat center;
-  background-size: 100%;
+  /* interesting, cover will be contained in the element*/
+  background-size: cover;
+  /*border-radius: 10px;*/
+}
+
+.project.four {
+  border: 1px solid red;
+}
+
+.inside.aboutMe {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*BIG PICTURE DIV*/
@@ -162,4 +184,7 @@ body {
 .foodPicture {
   background: url('../images/pokeprep.jpg') no-repeat center fixed;
   background-size: 100%;
+  -webkit-box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
+  -moz-box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
+  box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
 }
