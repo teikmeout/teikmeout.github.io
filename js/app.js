@@ -1,33 +1,28 @@
 // document.addEventListener("DOMContentLoaded", function(event) {
-console.log("DOM fully loaded and parsed");
+console.log("js connected correctly");
+
+
 // pointer at span tag with class
 const rotateWord = document.querySelector('.swap-name');
 
-const arrayOfDescriptions = ['Developer', 'Tinkerer', 'Designer', 'Foodie',];
+// descriptions for the looping process
+const arrayOfDescriptions = ['Developer', 'Tinkerer', 'Designer', 'Foodie'];
+
 // FUNCTION: changes randomly the value of a span tag in landing
 function changeSpan() {
-  // debugger
-
   let intervalID = setInterval(() => {
-    console.log('change!')
+    // console.log('change!')
+    rotateWord.className = "swap-name animated fadeOut"
     rotateWord.innerText = arrayOfDescriptions[Math.floor(Math.random() * arrayOfDescriptions.length)];
-    // console.log('changed');
+    rotateWord.className = "swap-name animated fadeIn";
   }, 2000) // end of setinterval
+} // end of changeSpan
 
-}
+const title = document.querySelector('.shadow');
 
-// function fade(thing, direction) {
-//   let opacity = 1;
-//   let intervalID2 = setInterval(() => {
-//     if (opacity === 0 ) {
-//       clearInterval(intervalID2);
-//       // element.
-//     }
-//     thing.style.opacity =
-//   }, 50)
-// }
+title.addEventListener('mouseover', function() {
+  console.log('yeah')
+  title.className = 'shadow animated fadeIn';
+})
 
 changeSpan();
-
-// let intervalID = window.setInterval(changeSpan, 3000);
-// });
