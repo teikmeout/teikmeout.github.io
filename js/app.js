@@ -20,7 +20,7 @@ function changeSpan() {
 
 const title = document.querySelector('.shadow');
 
-title.addEventListener('mouseover', function() {
+title.addEventListener('keydown', function() {
   console.log('yeah')
   title.className = 'shadow animated fadeIn';
 })
