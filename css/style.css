@@ -26,8 +26,6 @@ body {
 /*TEMPLATE*/
 /*div template for all boards*/
 .board {
-  /*!!!padding: 0;
-  margin: 0;*/
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,16 +36,6 @@ body {
 /*styling main landing div */
 .landingPage {
   background-color: rgba(0,0,0,.3);
-}
-.aboutMe {
-  padding: 0 20px 0 20px;
-  background-color: rbga(0,0,0,.4);
-}
-.aboutMe p {
-  color: #FAFAFA;
-  font-size: 3vh;
-  text-align: center;
-  /*color: rgb(17, 11, 22);*/
 }
 
 .border{
@@ -76,16 +64,13 @@ body {
 /* styling the first background static div*/
 .background-one {
   /*image is fixed and will remain in bg for the height amount*/
-  /*background: url('../images/flower2560.jpg') no-repeat center /*center*/ /*fixed;*/
-  background: url('../images/donut.jpg') no-repeat center /*center*/ fixed;
-  /*background-zoom: 50%;*/
-  /*background: url('../images/flower.jpg') no-repeat center center fixed;*/
-  /*background-size: 80%;*/
+  background: url('../images/donut.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
-  /*zoom: 50%;*/
-  /*width: cover;*/
-  height: 200vh;
-  z-index: 5;
+  background-position: center top;
+  background-position: 50% 30%;
+  background-attachment: fixed;
+  height: 210vh;
 }
 
 /*PORTFOLIO div*/
@@ -123,6 +108,7 @@ body {
 .divider p {
   text-align: center;
   color: rgb(17, 11, 22);
+  /*color: rgba(163, 255, 222, 1);*/
 }
 
 /*PROJECTS CONTAINER*/
@@ -147,10 +133,30 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 10px;
+  color: rgba(0,0,0,0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.projectContainer a {
+  text-decoration: none;
+ }
+ .projectContainer a:link {
+
+ }
+ .projectContainer a:visited {
+
+ }
+ .projectContainer a:hover {
+
+ }
+ .projectContainer a:active {
+
+ }
 
 .project-fade-in:hover {
   background-color: rgba(255,255,255,.4);
+  color: rgba(0,0,0,1);
 }
 
 /*project one for minesweeper*/
@@ -177,11 +183,16 @@ body {
   background-size: cover;
 }
 
-.inside.aboutMe {
-  height: 100%;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
+.hidden{
+  display: none;
+  border: 2px solid green;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  /*z-index: 500;*/
+  /*this is still being considered as*/
+  background-color: rgba(2,2,2,.4);
+  /*border-radius: 10px;*/
   align-items: center;
   justify-content: center;
 }
@@ -196,12 +207,79 @@ body {
   -webkit-box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
   -moz-box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
   box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
+  /*flex-direction: column;*/
+  align-items: baseline;
+  /*justify-content: flex-end;*/
 }
 
+/*.aboutMe {
+  padding: 0 20px 0 20px;
+  background-color: rbga(0,0,0,.4);
+}*/
+.aboutMe p {
+  /*color: #FAFAFA;*/
+  font-size: 3vh;
+  text-align: left;
+  /*color: rgb(17, 11, 22);*/
+  /*color: rgba(163, 255, 222, 1);*/
+  color: rgba(2,2,2,.8);
+  padding: 15px;
+  line-height: 40px;
+
+}
+
+.aboutMe h1 {
+  color: rgba(2,2,2,.8);
+}
+
+.inside.aboutMe {
+  /*border: 2px solid red;*/
+  height: 100vh;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*background-color: rgba(2,2,2,.3);*/
+  background-color: rgba(163, 255, 222, .3);
+}
+
+
+/*FOOD PICTURE DIV*/
 .foodPicture {
   background: url('../images/pokeprep.jpg') no-repeat center fixed;
   background-size: 100%;
   -webkit-box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
   -moz-box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
   box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+
 }
+
+.cont{
+  height: 80%;
+  width: 40%;
+  /*border: 3px solid red;*/
+  border-radius: 6px;
+  background-color: rgba(0,0,0,.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont p {
+  font-size: 25px;
+}
+
+.boxshadow {
+  -webkit-box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
+  -moz-box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
+  box-shadow: inset 1px 1px 2px 1.5px rgba(0,0,0,0.56);
+}
+
+
