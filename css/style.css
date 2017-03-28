@@ -20,10 +20,14 @@ body {
 
 /* center text that should dissapear after entry*/
 .border h1 {
-  font-size: 8em;
+  font-size: 15vw;
   /*color: rgba(115, 81, 78, 1);*/
   /*color: : #a9e6a7;*/
   text-align: center;
+}
+
+h1.name {
+  font-size: 7vw;
 }
 
 /*TEMPLATE*/
@@ -95,7 +99,7 @@ body {
 }
 
 .portfolio-title {
-  font-size: 200px;
+  font-size: 15vw;
   margin-bottom: 20px;
 }
 
@@ -293,11 +297,8 @@ body {
   body {
     background-color: red;
   }
-  h1 {
-    font-size: 2em;
-  }
   .portfolio-title {
-    font-size: 1em;
+    /*font-size: 2em;*/
   }
   p {
     font-size: 10px;
