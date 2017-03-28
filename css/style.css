@@ -98,8 +98,8 @@ h1.name {
   color: #FAFAFA;
 }
 
-.portfolio-title {
-  font-size: 15vw;
+h1.portfolio-title {
+  font-size: 9vw;
   margin-bottom: 20px;
 }
 
