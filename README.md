@@ -1,13 +1,14 @@
-# Welcome dev-curious-person
+# teikmeout.com
 
+It's a blog! it's my landing page! it's a bird!
 ![](https://media.giphy.com/media/3knKct3fGqxhK/giphy.gif)
 
-This site was made with care and love by
+This site was made with 
 Taka Ahrens
 
-Images taken from Upsplash and my own Instagram @teikmeout.  
-
-For more information contact me at my email:
-taka@teikmeout.com
+## Technologies
+- React
+- Node.js
+- Express.js
 
 
