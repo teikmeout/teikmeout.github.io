@@ -8,7 +8,6 @@ By: Jonathan Ahrens
 
 ## Technologies
 - React
-- Node.js
-- Express.js
+- Webpack
 
 
