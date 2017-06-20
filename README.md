@@ -1,10 +1,10 @@
 # teikmeout.com
 
-It's a blog! it's my landing page! it's a bird!
-![](https://media.giphy.com/media/3knKct3fGqxhK/giphy.gif)
+Landing page for teikmeout.com  
 
-This site was made with 
-Taka Ahrens
+Built with React and Webpack.  
+
+By: Jonathan Ahrens  
 
 ## Technologies
 - React
