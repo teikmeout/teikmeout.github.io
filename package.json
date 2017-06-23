@@ -9,8 +9,10 @@
     "start": "node app.js",
     "build": "webpack-dev-server",
     "build:prod": "webpack -p",
-    "webpack": "webpack",
-    "deploy": "gh-pages -d build"
+    "webpack": "webpack --progress --colors",
+    "deploy": "gh-pages -d build",
+    "watch": "webpack --progress --watch",
+    "checkdev": "webpack -d"
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,10 @@
     "url": "https://github.com/teikmeout/teikmeout.github.io/issues"
   },
   "homepage": "https://teikmeout.github.io",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
@@ -34,8 +39,6 @@
     "gh-pages": "^1.0.0",
     "html-webpack-plugin": "^2.28.0",
     "html-webpack-template": "^6.0.1",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
     "style-loader": "^0.18.2",
     "webpack": "^2.6.0",
     "webpack-dev-server": "^2.4.5"

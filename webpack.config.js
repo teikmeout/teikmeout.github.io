@@ -104,6 +104,10 @@ module.exports = {
     // contentBase: "./dist",
     // publicPath:'./dist' // so webpack dev server can find this file
     // note that webpack dev server serves these files from memory
+    hot: true
   }
-  // devtool: 'eval-source-map',
+  // devtool: 'eval',
+  // when using production change this to cheap-module-source-map
+  // to only load the dependencies that you want
+
 };
