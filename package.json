@@ -27,7 +27,8 @@
   "homepage": "https://teikmeout.github.io",
   "dependencies": {
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-tooltip": "^3.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
