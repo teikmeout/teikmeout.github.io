@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactTooltip from 'react-tooltip';
 import './App.css';
 
 class App extends React.Component {
@@ -13,7 +14,7 @@ class App extends React.Component {
 
   toggleHiddenProject(e) {
     console.log(e.target.nextSibling);
-    e.target.nextSibling.classList.toggle('hidden');
+    e.target.nextSibling.classList.toggle('flex');
   }
 
   render() {
@@ -24,26 +25,14 @@ class App extends React.Component {
         <code>Brooklyn, NY</code> <br />
         <a href="tel:917-302-5196" className="phone"><small>917-3025196</small></a>
         <h4>Projects</h4>
-        <ul>
-          <li onClick={(e) => this.toggleHiddenProject(e)}>Minesweeper</li>
-            <div className="project-container hidden">
-            <small>HTML + Javascript + j.Query.</small>
-            <small>Recreated the minesweeper game from scratch.</small>
-            </div>
-          <li onClick={(e) => this.toggleHiddenProject(e)}>Crowd Sourcing Bus Mapper</li>
-            <div className="project-container hidden">
-            <small>Node.js + Express.js + EJS(views) + MongoDB.</small>
-            <small>Web Application helps a user map his location to determine bus mapping</small>
-            </div>
-          <li onClick={(e) => this.toggleHiddenProject(e)}>Reask, classroom polling</li>
-            <div className="project-container hidden">
-
-            </div>
-          <li onClick={(e) => this.toggleHiddenProject(e)}>Parking Meter Concept App</li>
-            <div className="project-container hidden">
-
-            </div>
-        </ul>
+        <div onClick={(e) => this.toggleHiddenProject(e)}>Minesweeper</div>
+          <div className="project-container hidden">
+            <div className="description-container border">description of the project</div>
+            <div className="image-container border">image of the project</div>
+          </div>
+        <div>Crowd Sourcing Bus Mapper</div>
+        <div>Reask, classroom polling</div>
+        <div>Parking Meter Concept App</div>
 
         <h4>Skills</h4>
         <ul>
