@@ -26,15 +26,15 @@ const ETWP = new extract({filename: "style.css"});
 
 // instatiation of html-webpack-plugin
 // this is the config I'm pretty sure is failing
-// const HTML = new HtmlWebpackPlugin({
-//   title: 'teikmeout',
-//   xhtml: true,
-//   inject: false,
-//   template: require('html-webpack-template'),
-//   appMountId: 'root-container'
-//   // scripts: [
-//   // ]
-// });
+const HTML = new HtmlWebpackPlugin({
+  title: 'teikmeout',
+  xhtml: true,
+  inject: false,
+  template: 'index.html',
+  appMountId: 'root-container'
+  // scripts: [
+  // ]
+});
 
 const BUILD_DIR = path.resolve(__dirname, 'dist');
 const APP_DIR = path.resolve(__dirname, 'src');
@@ -90,7 +90,20 @@ module.exports = {
         use: ETWP.extract({
           use: ['css-loader'] // so webpack can import css into JS
         })
-      }
+      },
+      // {
+      //   test: /\.(jpg|png)$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         name: [name].[ext], // for file loader this will help keep og name and extension
+      //         outputPath:'img/',
+      //         publicPath: 'img/'
+      //       }
+      //     }
+      //   ]
+      // }
     ]
   },
   // 4. Plugins
