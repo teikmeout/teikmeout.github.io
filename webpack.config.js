@@ -1,7 +1,7 @@
 // this is a config of webpack 2
 // different from webpack 1, so read up... buddy
 
-// dependencies explaiined by use
+// dependencies explained by use
 //    "extract-text-webpack-plugin": "^2.1.0",
 //     // ^^ grab all the import for css files and put them in a new css file
 //    // does not depend on JS
