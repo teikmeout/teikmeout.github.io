@@ -13,21 +13,16 @@ body {
   font-family: 'helvetica';
   display: flex;
   justify-content: center;
-  /*align-items: center;*/
-  /*border: 1px solid orange;*/
 }
 
 .cont {
   min-width: 680px;
-  /*height: 100%;*/
-  border: 2px solid blue;
 }
 
 .project-container {
   display: none;
-  height: 100px;
+  height: 200px;
   width: 100%;
-  border: 2px solid red;
   background-color: #FAFAFA;
 }
 
@@ -44,6 +39,17 @@ div.proj-title {
 div.proj-title p{
   padding: 0;
   margin: 0;
+}
+
+ul.skills {
+  /*list-style-position:inside*/
+  /*list-style-image: url('../images/avocado.png')*/
+}
+
+.skillcont {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .border {
