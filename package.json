@@ -13,7 +13,7 @@
     "watch": "webpack --progress --watch",
     "deploy": "gh-pages -d build",
     "checkdev": "webpack -d",
-    "cleanup": "rm -rf ./node_modules && rm -rf ./dist && rm -rf ./src"
+    "cleanup": "rm -rf ./node_modules && rm -rf ./src"
   },
   "repository": {
     "type": "git",
