@@ -1,13 +1,13 @@
-# Welcome dev-curious-person
+# teikmeout.com
 
-![](https://media.giphy.com/media/3knKct3fGqxhK/giphy.gif)
+Landing page for teikmeout.com  
 
-This site was made with care and love by
-Taka Ahrens
+Built with React and Webpack.  
 
-Images taken from Upsplash and my own Instagram @teikmeout.  
+By: Jonathan Ahrens  
 
-For more information contact me at my email:
-taka@teikmeout.com
+## Technologies
+- React
+- Webpack
 
 
