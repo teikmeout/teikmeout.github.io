@@ -1,1 +1,58 @@
-body,html{margin:0;padding:0;height:100%}body{width:100%;background-color:#fafafa;font-family:helvetica;display:flex;justify-content:center}.cont{min-width:680px}.project-container{display:none;height:200px;width:100%;background-color:#fafafa}.flex{display:flex;justify-content:space-around}div.proj-title{cursor:pointer}div.proj-title p{padding:0;margin:0}.skillcont{width:60%;display:flex;justify-content:space-around}.border{border:1px solid red}
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FAFAFA;
+  font-family: 'helvetica';
+  display: flex;
+  justify-content: center;
+}
+
+.cont {
+  min-width: 680px;
+}
+
+.project-container {
+  display: none;
+  height: 200px;
+  width: 100%;
+  background-color: #FAFAFA;
+}
+
+.flex {
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: space-around;
+  /*align-items: center;*/
+}
+
+div.proj-title {
+  cursor: pointer;
+}
+div.proj-title p{
+  padding: 0;
+  margin: 0;
+}
+
+ul.skills {
+  /*list-style-position:inside*/
+  /*list-style-image: url('../images/avocado.png')*/
+}
+
+.skillcont {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.border {
+  border: 1px solid red;
+}
+
