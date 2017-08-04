@@ -18,5 +18,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://teikmeout.github.io/site/public"
+  "homepage": "https://teikmeout.github.io/"
 }
