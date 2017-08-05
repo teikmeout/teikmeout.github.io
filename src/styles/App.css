@@ -9,7 +9,9 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: #FAFAFA;
+  /*background-color: #FAFAFA;*/
+  background-color: #222;
+  color: #FAFAFA;
   font-family: 'helvetica';
   display: flex;
   justify-content: center;
@@ -19,18 +21,44 @@ body {
   min-width: 680px;
 }
 
-.project-container {
+.proj-cont {
   display: none;
-  height: 200px;
+  height: 250px;
   width: 100%;
-  background-color: #FAFAFA;
+  /*background-color: #FAFAFA;*/
+  border: 1px solid orange;
 }
+
+.proj-cont div {
+  height: 80%;
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*.description-container {
+ height: 80%;
+}*/
 
 .flex {
   display: flex;
   /*flex-direction: column;*/
   justify-content: space-around;
-  /*align-items: center;*/
+  align-items: center;
 }
 
 div.proj-title {
