@@ -9894,12 +9894,8 @@ var App = function (_React$Component) {
         _react2.default.createElement('br', null),
         _react2.default.createElement(
           'a',
-          { href: 'tel:917-302-5196', className: 'phone' },
-          _react2.default.createElement(
-            'small',
-            null,
-            '917-3025196'
-          )
+          { href: 'mailto:ahrens.jonathan@gmail.com' },
+          'ahrens.jonathan@gmail.com'
         ),
         _react2.default.createElement(
           'h4',
@@ -22838,111 +22834,147 @@ var Projects = function (_React$Component) {
   }
 
   _createClass(Projects, [{
-    key: "render",
-    value: function render() {
+    key: 'renderProjects',
+    value: function renderProjects(props) {
       var _this2 = this;
 
+      console.log('inside renderProjects', this.props);
+      if (this.props) {
+        return this.props.projects.map(function () {
+          return _react2.default.createElement(
+            'div',
+            { className: 'proj-title' },
+            _react2.default.createElement(
+              'p',
+              { onClick: function onClick(e) {
+                  return _this2.props.toggleHiddenProject(e);
+                } },
+              '\uD83E\uDD51  Reask, classroom polling'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'proj-cont hidden' },
+              _react2.default.createElement(
+                'div',
+                { className: 'description-container border' },
+                'description of the project'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'image-container border' },
+                'image of the project'
+              )
+            )
+          );
+        });
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this3 = this;
+
       return _react2.default.createElement(
-        "div",
-        { className: "projs-cont" },
+        'div',
+        { className: 'projs-cont' },
         _react2.default.createElement(
-          "div",
-          { className: "proj-title" },
+          'div',
+          { className: 'proj-title' },
           _react2.default.createElement(
-            "p",
+            'p',
             { onClick: function onClick(e) {
-                return _this2.props.toggleHiddenProject(e);
+                return _this3.props.toggleHiddenProject(e);
               } },
-            "\uD83E\uDD51  Reask, classroom polling"
+            '\uD83E\uDD51  Reask, classroom polling'
           )
         ),
         _react2.default.createElement(
-          "div",
-          { className: "proj-cont hidden" },
+          'div',
+          { className: 'proj-cont hidden' },
           _react2.default.createElement(
-            "div",
-            { className: "description-container border" },
-            "description of the project"
+            'div',
+            { className: 'description-container border' },
+            'description of the project'
           ),
           _react2.default.createElement(
-            "div",
-            { className: "image-container border" },
-            "image of the project"
+            'div',
+            { className: 'image-container border' },
+            'image of the project'
           )
         ),
         _react2.default.createElement(
-          "div",
-          { className: "proj-title" },
+          'div',
+          { className: 'proj-title' },
           _react2.default.createElement(
-            "p",
+            'p',
             { onClick: function onClick(e) {
-                return _this2.props.toggleHiddenProject(e);
+                return _this3.props.toggleHiddenProject(e);
               } },
-            "\uD83E\uDD51  Crowd Sourcing Bus Mapper"
+            '\uD83E\uDD51  Crowd Sourcing Bus Mapper'
           )
         ),
         _react2.default.createElement(
-          "div",
-          { className: "proj-cont hidden" },
+          'div',
+          { className: 'proj-cont hidden' },
           _react2.default.createElement(
-            "div",
-            { className: "description-container border" },
-            "description of the project"
+            'div',
+            { className: 'description-container border' },
+            'description of the project'
           ),
           _react2.default.createElement(
-            "div",
-            { className: "image-container border" },
-            "image of the project"
+            'div',
+            { className: 'image-container border' },
+            'image of the project'
           )
         ),
         _react2.default.createElement(
-          "div",
-          { className: "proj-title" },
+          'div',
+          { className: 'proj-title' },
           _react2.default.createElement(
-            "p",
+            'p',
             { onClick: function onClick(e) {
-                return _this2.props.toggleHiddenProject(e);
+                return _this3.props.toggleHiddenProject(e);
               } },
-            "\uD83E\uDD51  Parking Meter Concept App"
+            '\uD83E\uDD51  Parking Meter Concept App'
           )
         ),
         _react2.default.createElement(
-          "div",
-          { className: "proj-cont hidden" },
+          'div',
+          { className: 'proj-cont hidden' },
           _react2.default.createElement(
-            "div",
-            { className: "description-container border" },
-            "description of the project"
+            'div',
+            { className: 'description-container border' },
+            'description of the project'
           ),
           _react2.default.createElement(
-            "div",
-            { className: "image-container border" },
-            "image of the project"
+            'div',
+            { className: 'image-container border' },
+            'image of the project'
           )
         ),
         _react2.default.createElement(
-          "div",
-          { className: "proj-title" },
+          'div',
+          { className: 'proj-title' },
           _react2.default.createElement(
-            "p",
+            'p',
             { onClick: function onClick(e) {
-                return _this2.props.toggleHiddenProject(e);
+                return _this3.props.toggleHiddenProject(e);
               } },
-            "\uD83E\uDD51  Minesweeper"
+            '\uD83E\uDD51  Minesweeper'
           )
         ),
         _react2.default.createElement(
-          "div",
-          { className: "proj-cont hidden" },
+          'div',
+          { className: 'proj-cont hidden' },
           _react2.default.createElement(
-            "div",
-            { className: "description-container border" },
-            "description of the project"
+            'div',
+            { className: 'description-container border' },
+            'description of the project'
           ),
           _react2.default.createElement(
-            "div",
-            { className: "image-container border" },
-            "image of the project"
+            'div',
+            { className: 'image-container border' },
+            'image of the project'
           )
         )
       );

@@ -70,7 +70,7 @@ class App extends React.Component {
         <h1>Jonathan Ahrens</h1>
         <h3>Full Stack Web Developer</h3>
         <code>Brooklyn, NY</code> <br />
-        <a href="tel:917-302-5196" className="phone"><small>917-3025196</small></a>
+        <a href="mailto:ahrens.jonathan@gmail.com">ahrens.jonathan@gmail.com</a>
 
         <h4>Projects</h4>
         <Projects toggleHiddenProject={(e) => this.toggleHiddenProject(e)}/>

@@ -17,6 +17,10 @@ body {
   justify-content: center;
 }
 
+a {
+  color: hotpink;
+}
+
 .cont {
   min-width: 680px;
 }
