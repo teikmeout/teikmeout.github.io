@@ -3,6 +3,7 @@ import React from 'react';
 class Projects extends React.Component {
 
 
+  // function in progress
   renderProjects(props) {
     console.log('inside renderProjects', this.props);
     if(this.props) {

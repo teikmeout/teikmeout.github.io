@@ -18,7 +18,7 @@ body {
 }
 
 a {
-  color: hotpink;
+  color: lightblue;
 }
 
 .cont {
@@ -51,6 +51,30 @@ a {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.fade-out {
+  visibility: hidden;
+  opacity: 0;
+  animation-name: fadeOut;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+
+.m-fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
