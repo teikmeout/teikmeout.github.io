@@ -9828,7 +9828,7 @@ var App = function (_React$Component) {
   _createClass(App, [{
     key: 'toggleHiddenProject',
     value: function toggleHiddenProject(e) {
-      console.log('inside allprojs toggle', e.target);
+      // console.log('inside allprojs toggle', e.target);
       // hide all projects before showing a new one
       var allprojs = document.querySelectorAll('.proj-cont');
       var _iteratorNormalCompletion = true;
@@ -9839,7 +9839,7 @@ var App = function (_React$Component) {
         var _loop = function _loop() {
           var proj = _step.value;
 
-          console.log(proj);
+          // console.log(proj);
           if (!proj.classList.contains('hidden')) {
             proj.classList.remove('fade-in');
             // proj.classList.remove('flex');
@@ -9847,11 +9847,11 @@ var App = function (_React$Component) {
             proj.classList.add('m-fadeOut');
             // set a timeout to remove element from display once animation ends
             setTimeout(function () {
-              console.log('disapear!');
+              // console.log('disapear!')
               proj.classList.remove('flex');
               proj.classList.remove('m-fadeOut');
               proj.classList.add('hidden');
-              console.log(proj);
+              // console.log(proj);
             }, 300);
           }
         };
@@ -10054,12 +10054,12 @@ var Projects = function (_React$Component) {
               { className: 'proj-cont hidden' },
               _react2.default.createElement(
                 'div',
-                { className: 'description-container border' },
+                { className: 'description-container' },
                 'description of the project'
               ),
               _react2.default.createElement(
                 'div',
-                { className: 'image-container border' },
+                { className: 'image-container' },
                 'image of the project'
               )
             )
@@ -10091,14 +10091,16 @@ var Projects = function (_React$Component) {
           { className: 'proj-cont hidden' },
           _react2.default.createElement(
             'div',
-            { className: 'description-container border' },
-            'description of the project'
+            { className: 'desc-cont' },
+            _react2.default.createElement(
+              'small',
+              null,
+              'Built a realtime web-app for use in classrooms that aggregates students questions giving teachers better insight into relevant topics in real time.',
+              _react2.default.createElement('br', null),
+              'Node.js + Express.js + React.js + Socket.io + PostgreSQL'
+            )
           ),
-          _react2.default.createElement(
-            'div',
-            { className: 'image-container border' },
-            'image of the project'
-          )
+          _react2.default.createElement('div', { className: 'img-cont' })
         ),
         _react2.default.createElement(
           'div',
@@ -10116,14 +10118,16 @@ var Projects = function (_React$Component) {
           { className: 'proj-cont hidden' },
           _react2.default.createElement(
             'div',
-            { className: 'description-container border' },
-            'description of the project'
+            { className: 'desc-cont' },
+            _react2.default.createElement(
+              'small',
+              null,
+              'A web application that allows users to contribute to a crowdsourced map of bus-stops that is much simpler than municipal maps.',
+              _react2.default.createElement('br', null),
+              'Node.js + Express.js + MongoDB + Google Maps API + geolocation.'
+            )
           ),
-          _react2.default.createElement(
-            'div',
-            { className: 'image-container border' },
-            'image of the project'
-          )
+          _react2.default.createElement('div', { className: 'img-cont' })
         ),
         _react2.default.createElement(
           'div',
@@ -10141,14 +10145,16 @@ var Projects = function (_React$Component) {
           { className: 'proj-cont hidden' },
           _react2.default.createElement(
             'div',
-            { className: 'description-container border' },
-            'description of the project'
+            { className: 'desc-cont' },
+            _react2.default.createElement(
+              'small',
+              null,
+              'Created a web application that serves as a digital parking meter system using ',
+              _react2.default.createElement('br', null),
+              'Node.js + Express.js + React.js + GoogleMaps API + PostgreSQL.'
+            )
           ),
-          _react2.default.createElement(
-            'div',
-            { className: 'image-container border' },
-            'image of the project'
-          )
+          _react2.default.createElement('div', { className: 'img-cont' })
         ),
         _react2.default.createElement(
           'div',
@@ -10166,14 +10172,45 @@ var Projects = function (_React$Component) {
           { className: 'proj-cont hidden' },
           _react2.default.createElement(
             'div',
-            { className: 'description-container border' },
-            'description of the project'
+            { className: 'desc-cont' },
+            _react2.default.createElement(
+              'small',
+              null,
+              'Recreated the windows game of Minesweeper with logic of my own.',
+              _react2.default.createElement('br', null),
+              'HTML + CSS + jQuery'
+            )
           ),
+          _react2.default.createElement('div', { className: 'img-cont' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'proj-title' },
+          _react2.default.createElement(
+            'p',
+            { onClick: function onClick(e) {
+                return _this3.props.toggleHiddenProject(e);
+              } },
+            '\uD83E\uDD51  Youtube Video Syncer'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'proj-cont hidden' },
           _react2.default.createElement(
             'div',
-            { className: 'image-container border' },
-            'image of the project'
-          )
+            { className: 'desc-cont' },
+            _react2.default.createElement(
+              'small',
+              null,
+              'Application that allows two users to watch a youtube video at ',
+              _react2.default.createElement('br', null),
+              'the same time by  synchronizing  of times and actions via ',
+              _react2.default.createElement('br', null),
+              'Sockets.io + Node.js + Express.js.'
+            )
+          ),
+          _react2.default.createElement('div', { className: 'img-cont' })
         )
       );
     }
