@@ -29,12 +29,33 @@ a {
   display: none;
   height: 250px;
   width: 100%;
-  /*background-color: #FAFAFA;*/
-  border: 1px solid orange;
+  border-radius: 3px;
 }
 
 .proj-cont div {
   height: 80%;
+  max-width: 60%;
+}
+
+.desc-cont {
+  max-width: 20%;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  background-color: #333;
+}
+
+.desc-cont small {
+  padding: 20px;
+  line-height: 25px;
+}
+
+.img-cont {
+  width: 20%;
+  background-color: #333;
+  border-radius: 3px;
 }
 
 .fade-in {

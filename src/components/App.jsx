@@ -48,11 +48,11 @@ class App extends React.Component {
   } // end of contructor
 
   toggleHiddenProject(e) {
-    console.log('inside allprojs toggle', e.target);
+    // console.log('inside allprojs toggle', e.target);
     // hide all projects before showing a new one
     let allprojs = document.querySelectorAll('.proj-cont');
     for (let proj of allprojs) {
-      console.log(proj);
+      // console.log(proj);
       if(!proj.classList.contains('hidden')) {
         proj.classList.remove('fade-in');
         // proj.classList.remove('flex');
@@ -60,11 +60,11 @@ class App extends React.Component {
         proj.classList.add('m-fadeOut');
         // set a timeout to remove element from display once animation ends
         setTimeout(() => {
-          console.log('disapear!')
+          // console.log('disapear!')
           proj.classList.remove('flex');
           proj.classList.remove('m-fadeOut');
           proj.classList.add('hidden');
-          console.log(proj);
+          // console.log(proj);
         }, 300)
       }
     }
