@@ -12,16 +12,16 @@ For the following reasons:
 For some reason github wants you to push your code into `master` branch to publish and you don't want to serve the whole framework of your app so I ended up creating branches that I would run the `build-prod` script on and would then manually copy and paste the minimized output into my `master` branch. _Mala idea_ (bad idea for performance).  
 
 2. How can I change my deployment type so it's agile and quick but at the same time in `react`?<br/>
-Using `create-react-app` instead of a handmade webpack. I found that there are two additional parts:  
-- `gh-pages` npm package
-- `"homepage": "https://teikmeout.githubb.io`
-- `"proxy": "http://localhost:3000`
+Using `create-react-app` instead of a handmade webpack. I found that there are three things I had forgotten:  
+- `gh-pages` npm package (helps publishing on github pages)
+- `"homepage": "https://teikmeout.githubb.io` changing this in package.json is life!
+- `"proxy": "http://localhost:3000` in case you are using this inside of a full stack service.  
 
 These three simple truths changed my life, oh and also reading into the `create-react-app` README.md that they most generously make for us. Obviously this is me making a point by deleting all that information and only adding text that is relevant to us, but let me share some of that beauty:
 
 ---
 
-### GitHub Pages
+### Deploying a GitHub User Page
 
 > Note: this feature is available with `react-scripts@0.2.0` and higher.
 
