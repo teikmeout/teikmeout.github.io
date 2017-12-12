@@ -17,7 +17,13 @@ function Projects(props) {
                   {el.desc}
                 </small>
               </div>
-            <div key={"img-cont"+i} className="img-cont">{el.imageurl}</div>
+              <div>
+                <small>- {el.tech}</small>
+              </div>
+              <div>
+                <small><a href={el.link}>{el.link}</a></small>
+              </div>
+            {/*<div key={"img-cont"+i} className="img-cont"><small key={"small-img-desc"+i}>{el.imageurl}</small></div>*/}
           </div>
         </div>
     )

@@ -11,8 +11,8 @@ class App extends Component {
         {
           name: "Reask, classroom polling",
           desc: `Built a realtime web-app for use in classrooms that aggregates students questions giving
-          teachers better insight into relevant topics in real time.
-          Node.js + Express.js + React.js + Socket.io + PostgreSQL.`,
+          teachers better insight into relevant topics in real time.`,
+          tech: `Node.js + Express.js + React.js + Socket.io + PostgreSQL.`,
           imageurl: "image not available",
           link: "http://re-ask.herokuapp.com/",
           github: ""
@@ -20,29 +20,32 @@ class App extends Component {
         {
           name: "Crowd Sourcing Bus Mapper",
           desc: `A web application that allows users to contribute to a crowdsourced map of bus-stops
-          that is much simpler than municipal maps.
-          Node.js + Express.js + MongoDB + Google Maps API + geolocation.`,
+          that is much simpler than municipal maps.`,
+          tech: `Node.js + Express.js + MongoDB + Google Maps API + geolocation.`,
           imageurl: "image not available",
           link: "https://cs-busstop.herokuapp.com/",
           github: ""
         },
         {
           name: "Parking Meter Concept App",
-          desc: `Created a web application that serves as a digital parking meter system using Node.js + Express.js + React.js + Google Maps API + PostgreSQL.`,
+          desc: `Created a web application that serves as a digital parking meter system.`,
+          tech: `Node.js + Express.js + React.js + Google Maps API + PostgreSQL.`,
           imageurl: "image not available",
           link: "http://iparkmyself.herokuapp.com/",
           github: ""
         },
         {
           name: "Grace Hopper Slack Bot",
-          desc: `Contributed to a Slackbot that allows students to queue up with TA’s and manages what instructor helps them out. Node.js + Slackbot + MongoDB`,
+          desc: `Contributed to a Slackbot that allows students to queue up with TA’s and manages what instructor helps them out.`,
+          tech: `Node.js + Slackbot + MongoDB.`,
           imageurl: "image not available",
           link: "not available",
           github: "https://github.com/teikmeout/gracehopper"
         },
         {
           name: "Youtube video syncer",
-          desc: `Application that allows two users to watch a youtube video at the same time by  synchronizing  of times and actions via Sockets.io + Node.js + Express.js.`,
+          desc: `Application that allows two users to watch a youtube video at the same time by  synchronizing  of times and actions.`,
+          tech: `Sockets.io + Node.js + Express.js.`,
           imageurl: "image not available",
           link: "",
           github: ""
@@ -57,7 +60,8 @@ class App extends Component {
       <div className="cont">
         <h1>Jonathan Ahrens</h1>
         <h4>Full Stack Web Developer - Coding Instuctor</h4>
-        <code>Brooklyn, NY</code> <br />
+        <code>Brooklyn, NY</code>
+        <br/>
         <a href="mailto:ahrens.jonathan@gmail.com">ahrens.jonathan@gmail.com</a>
 
         <h4>Projects</h4>
@@ -66,10 +70,12 @@ class App extends Component {
           />
 
         <h4>Contact</h4>
-          <div><span aria-label="avo" role="img">🍥</span> Linkedin: <a href="https://www.linkedin.com/in/ahrens-jonathan/">jonathan-ahrens</a></div>
-          <div><span aria-label="avo" role="img">🍥</span> Github: <a href="https://github.com/teikmeout">teikmeout</a></div>
-          <div><span aria-label="avo" role="img">🍥</span> Email: <a href="mailto:ahrens.jonathan@gmail.com">ahrens.jonathan@gmail.com</a></div>
-    </div>
+        <div className="contact-info"><span aria-label="avo" role="img">🍥</span> Linkedin: <a className="bottom-link" href="https://www.linkedin.com/in/ahrens-jonathan/">jonathan-ahrens</a></div>
+        <div className="contact-info"><span aria-label="avo" role="img">🍥</span> Github: <a className="bottom-link" href="https://github.com/teikmeout">teikmeout</a></div>
+        <div className="contact-info"><span aria-label="avo" role="img">🍥</span> Email: <a className="bottom-link" href="mailto:ahrens.jonathan@gmail.com">ahrens.jonathan@gmail.com</a></div>
+        <br/>
+        <small>Deploying this baby was complex. learn about create-react-app and gh-pages on my <a href="https://github.com/teikmeout/teikmeout.github.io/blob/create-react-app/README.md">README.md</a></small>
+      </div>
     );
   }
 }

@@ -9,3 +9,17 @@ a:visited {
 a:hover {
   color: magenta;
 }
+
+.cont {
+  /*border: 1px solid orange;*/
+}
+
+.bottom-link:link, .bottom-link:visited {
+  /*background-color: red;*/
+  /*padding: 10px;*/
+  /*display: inline-block;*/
+}
+
+.contact-info {
+  margin: 10px 0 10px 0;
+}

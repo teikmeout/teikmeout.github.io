@@ -1,14 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
-  height: 100%;
+  /*not defining height helped me keep this a little more responsive*/
   margin: 0;
-  padding: 0;
-  border: 1px solid blue;
+  padding: 25px;
 }
 body {
+  /*border: 1px solid chartreuse;*/
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   background-color: #2F4F4F;
   color: #FAFAFA;
+}
+
+@media (max-width: 500px) {
+  html {
+    /*border: 1px solid blue;*/
+    padding: 15px;
+  }
 }
