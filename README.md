@@ -102,12 +102,12 @@ After doing `yarn run deploy` I got this feedback
 $ yarn deploy
 yarn run v1.3.2
 $ yarn run build
+
+# see how yarn runs the predeploy just right before deploying! amazing...
+
 $ react-scripts build
 Creating an optimized production build...
 Compiled with warnings.
-
-./src/App.js
-  Line 2:  'logo' is defined but never used  no-unused-vars
 
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
@@ -132,10 +132,20 @@ Published
 ```
 > notice how the last part is pushing to -b master on gh-pages
 
-I navigate to `teikmeout.com`, nothing<br/>
-I navigate to `www.teikmeout.com`, nothing<br/>
+
+I navigate to `teikmeout.com`, nothing  
+I navigate to `www.teikmeout.com`, nothing  
 I navigate to `https://teikmeout.github.io/` and voila something!  
-wtf... let's check...  
+wtf... let's check...   
+
+- So I add in Custom Domain:
+`www.teikmeout.com`  
+- And make sure my `CNAME` file is located inside of my `public/` directory with:  
+```sh
+www.teikmeout.com
+```
+> Push one more time and now it finally arrives correctly
 ---
 
+Last update: Dec 12, 2017  
 Website made by Jonathan Ahrens
