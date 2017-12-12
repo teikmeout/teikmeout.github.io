@@ -95,6 +95,47 @@ Finally, make sure GitHub Pages option in your GitHub project settings is set to
 #### Step 5: Optionally, configure the domain
 You can configure a custom domain with GitHub Pages by adding a `CNAME` file to the `public/` folder.
 
+
+#### Personal notes after step 5
+After doing `yarn run deploy` I got this feedback
+```sh
+$ yarn deploy
+yarn run v1.3.2
+$ yarn run build
+$ react-scripts build
+Creating an optimized production build...
+Compiled with warnings.
+
+./src/App.js
+  Line 2:  'logo' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  35.56 KB  build/static/js/main.a4755d3a.js
+  143 B     build/static/css/main.b3392f02.css
+
+The project was built assuming it is hosted at https://teikmeout.github.io.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  yarn global add serve
+  serve -s build
+
+$ gh-pages -b master -d build
+Published
+✨  Done in 11.76s.
+```
+> notice how the last part is pushing to -b master on gh-pages
+
+I navigate to `teikmeout.com`, nothing<br/>
+I navigate to `www.teikmeout.com`, nothing<br/>
+I navigate to `https://teikmeout.github.io/` and voila something!  
+wtf... let's check...  
 ---
 
 Website made by Jonathan Ahrens
