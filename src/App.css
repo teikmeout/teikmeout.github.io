@@ -1,4 +1,11 @@
-html, body{
-  background-color: #333;
-  color: white;
+a:link {
+  color: #B0C4DE;
+}
+
+a:visited {
+  color: #B0C4DE;
+}
+
+a:hover {
+  color: magenta;
 }
