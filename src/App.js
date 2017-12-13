@@ -57,24 +57,28 @@ class App extends Component {
   render() {
     console.log('state ', this.state)
     return (
-      <div className="cont">
-        <h1>Jonathan Ahrens</h1>
-        <h4>Full Stack Web Developer - Coding Instuctor</h4>
-        <code>Brooklyn, NY</code>
-        <br/>
-        <a href="mailto:ahrens.jonathan@gmail.com">ahrens.jonathan@gmail.com</a>
+      <div className="cont border">
+        <header>
+          <h1>Jonathan Ahrens</h1>
+          <a href="mailto:ahrens.jonathan@gmail.com">ahrens.jonathan@gmail.com</a>
+        </header>
+        <main>
+          <h3>Full Stack Web Developer - Coding Instuctor</h3>
+          <code>Brooklyn, NY</code>
+          <br/>
 
-        <h4>Projects</h4>
-        <Projects
-          projects={this.state.projects}
-          />
+          <h3>Projects</h3>
+          <Projects
+            projects={this.state.projects}
+            />
 
-        <h4>Contact</h4>
-        <div className="contact-info"><span aria-label="avo" role="img">🍥</span> Linkedin: <a className="bottom-link" href="https://www.linkedin.com/in/ahrens-jonathan/">jonathan-ahrens</a></div>
-        <div className="contact-info"><span aria-label="avo" role="img">🍥</span> Github: <a className="bottom-link" href="https://github.com/teikmeout">teikmeout</a></div>
-        <div className="contact-info"><span aria-label="avo" role="img">🍥</span> Email: <a className="bottom-link" href="mailto:ahrens.jonathan@gmail.com">ahrens.jonathan@gmail.com</a></div>
-        <br/>
-        <small>Deploying this baby was complex. learn about create-react-app and gh-pages on my <a href="https://github.com/teikmeout/teikmeout.github.io/blob/create-react-app/README.md">README.md</a></small>
+          <h3>Contact</h3>
+          <div className="contact-info"><span aria-label="avo" role="img">🍥</span> Linkedin: <a className="bottom-link" href="https://www.linkedin.com/in/ahrens-jonathan/">jonathan-ahrens</a></div>
+          <div className="contact-info"><span aria-label="avo" role="img">🍥</span> Github: <a className="bottom-link" href="https://github.com/teikmeout">teikmeout</a></div>
+          <div className="contact-info"><span aria-label="avo" role="img">🍥</span> Email: <a className="bottom-link" href="mailto:ahrens.jonathan@gmail.com">ahrens.jonathan@gmail.com</a></div>
+          <br/>
+          <small>Deploying this baby was complex. learn about create-react-app and gh-pages on my <a href="https://github.com/teikmeout/teikmeout.github.io/blob/create-react-app/README.md">README.md</a></small>
+        </main>
       </div>
     );
   }

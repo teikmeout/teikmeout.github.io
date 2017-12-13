@@ -6,6 +6,10 @@
   /*border: 1px solid lime;*/
 }
 
+.proj-h4 {
+  color: chocolate;
+}
+
 @media (max-width: 500px) {
   .whole-proj {
     /*background-color: red;*/

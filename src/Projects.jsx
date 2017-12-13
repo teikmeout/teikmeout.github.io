@@ -9,19 +9,17 @@ function Projects(props) {
       return (
         <div key={"cont"+i} className="whole-proj">
           <div  className="proj-title" key={"proj-title"+i}>
-            <p key={"title"+i} onClick={(e) => this.props.toggleHiddenProject(e)}><span key={"avo"+i} aria-label="avo" role="img">🥑 </span>{el.name}</p>
+            <h4 key={"title"+i} className="proj-h4"><span key={"avo"+i} aria-label="avo" role="img">🥑 </span>{el.name}</h4>
           </div>
           <div key={"proj-cont"+i} className="proj-cont hidden">
               <div key={"desc-cont"+i} className="desc-cont">
-                <small key={"small"+i}>
-                  {el.desc}
-                </small>
+                {el.desc}
               </div>
               <div>
-                <small>- {el.tech}</small>
+                <small>- {el.tech}</small><br/>
               </div>
               <div>
-                <small><a href={el.link == 'not deployed' ? '#' : el.link}>{el.link}</a></small>
+                <small><a href={el.link === 'not deployed' ? '#' : el.link}>{el.link}</a></small>
               </div>
               <div>
                 <small><a href={el.link}>{el.github}</a></small>

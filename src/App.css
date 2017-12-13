@@ -1,3 +1,23 @@
+h1 {
+  /*why the fuck didn't I use normalize?*/
+  padding: 0;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+header {
+  padding: 40px;
+  background-color: #FFFFFF;
+  color: #222;
+}
+
+main {
+  padding: 0 0 40px 40px;
+}
+
 a:link {
   color: #B0C4DE;
 }
@@ -22,4 +42,17 @@ a:hover {
 
 .contact-info {
   margin: 10px 0 10px 0;
+}
+
+.border {
+  /*border: 1px solid red;*/
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 0 0 20px 20px;
+  }
+  header {
+    padding: 30px 20px;
+  }
 }
