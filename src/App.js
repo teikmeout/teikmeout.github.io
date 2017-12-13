@@ -15,7 +15,7 @@ class App extends Component {
           tech: `Node.js + Express.js + React.js + Socket.io + PostgreSQL.`,
           imageurl: "image not available",
           link: "http://re-ask.herokuapp.com/",
-          github: ""
+          github: "https://github.com/teikmeout/reAsk"
         },
         {
           name: "Crowd Sourcing Bus Mapper",
@@ -24,7 +24,7 @@ class App extends Component {
           tech: `Node.js + Express.js + MongoDB + Google Maps API + geolocation.`,
           imageurl: "image not available",
           link: "https://cs-busstop.herokuapp.com/",
-          github: ""
+          github: "https://github.com/teikmeout/CrowdSourcedBusStops"
         },
         {
           name: "Parking Meter Concept App",
@@ -32,14 +32,14 @@ class App extends Component {
           tech: `Node.js + Express.js + React.js + Google Maps API + PostgreSQL.`,
           imageurl: "image not available",
           link: "http://iparkmyself.herokuapp.com/",
-          github: ""
+          github: "https://github.com/teikmeout/iParkMyself"
         },
         {
           name: "Grace Hopper Slack Bot",
           desc: `Contributed to a Slackbot that allows students to queue up with TA’s and manages what instructor helps them out.`,
           tech: `Node.js + Slackbot + MongoDB.`,
           imageurl: "image not available",
-          link: "not available",
+          link: "not deployed",
           github: "https://github.com/teikmeout/gracehopper"
         },
         {
@@ -47,8 +47,8 @@ class App extends Component {
           desc: `Application that allows two users to watch a youtube video at the same time by  synchronizing  of times and actions.`,
           tech: `Sockets.io + Node.js + Express.js.`,
           imageurl: "image not available",
-          link: "",
-          github: ""
+          link: "not deployed",
+          github: "https://github.com/teikmeout/youtubeSocketSync"
         }
       ],
     }

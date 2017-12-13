@@ -21,7 +21,10 @@ function Projects(props) {
                 <small>- {el.tech}</small>
               </div>
               <div>
-                <small><a href={el.link}>{el.link}</a></small>
+                <small><a href={el.link == 'not deployed' ? '#' : el.link}>{el.link}</a></small>
+              </div>
+              <div>
+                <small><a href={el.link}>{el.github}</a></small>
               </div>
             {/*<div key={"img-cont"+i} className="img-cont"><small key={"small-img-desc"+i}>{el.imageurl}</small></div>*/}
           </div>
