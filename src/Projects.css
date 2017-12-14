@@ -12,8 +12,9 @@
 
 @media (max-width: 500px) {
   .whole-proj {
-    /*background-color: red;*/
     width: 100%;
-    /*height: 400px;*/
+  }
+  .proj-link {
+    margin-bottom: 10px;
   }
 }
