@@ -8,10 +8,22 @@ h2 {
   font-size: 200%;
 }
 
+h3 {
+  color: greenyellow;
+}
+
 header {
   padding: 40px;
   background-color: #FFFFFF;
   color: #222;
+}
+
+.email:link, .email:visited {
+  color: blue;
+}
+
+.email:hover {
+  color: lime;
 }
 
 main {
