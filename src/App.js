@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Projects from './Projects';
+import Gists from './Gists';
 import Footer from './Footer';
 import './App.css';
 
@@ -52,11 +53,31 @@ class App extends Component {
           github: "https://github.com/teikmeout/youtubeSocketSync"
         }
       ],
+      gists:[]
     }
   } // end of contructor
 
+
+  getGists() {
+    fetch('https://api.github.com/users/teikmeout/gists')
+      .then(res => res.json())
+      .then(gists => {
+        console.log('the gists -> ', gists);
+        this.setState({
+          gists: gists
+        }, () => {
+          console.log(this.state)
+        })
+      })
+      .catch(err => console.log(err));
+  }
+
+  componentDidMount() {
+    console.log('mounted');
+    this.getGists();
+  }
+
   render() {
-    console.log('state ', this.state)
     return (
       <div className="cont border">
         <header>
@@ -67,10 +88,11 @@ class App extends Component {
           <h3>Full Stack Web Developer - Coding Instuctor</h3>
           <code>Brooklyn, NY</code>
           <br/>
-
-          <h3>Projects</h3>
           <Projects
             projects={this.state.projects}
+            />
+          <Gists
+            gists={this.state.gists}
             />
         </main>
         <Footer/>

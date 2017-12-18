@@ -2,7 +2,7 @@
 Hi developer.
 
 This is my portfolio site.  
-A lot of developers put a lot of thought into how to make the best landing site for whoever is actually gona take the time to look at their stuff.
+A lot of developers put a lot of thought into how to make the best landing site for whoever is actually gonna take the time to look at their stuff.
 In belief that not all the time people will read this readme, I would like to state that I love tacos, and if there's any way you can make me happy guaranteed it's with tacos.<br/>
 <br/>
 So back to the chase...  
@@ -146,6 +146,12 @@ www.teikmeout.com
 ```
 > Push one more time and now it finally arrives correctly
 ---
+
+### Adding fetch for gists
+Doing a fetch to github api v3.  
+```js
+fech(https://api.github.com/users/teikmeout/gists)
+```
 
 Last update: Dec 12, 2017  
 Website made by Jonathan Ahrens
