@@ -7,10 +7,10 @@ function Gists(props) {
       <h3>Gists</h3>
       {
         props.gists.length > 0
-          ? props.gists.map(x => {
+          ? props.gists.map((x) => {
               for (let llave in x.files) {
                 return(
-                  <a href="{x.url}" key={llave}><p key={"p"+llave}>{llave}</p></a>
+                  <a href={x.html_url} key={llave}><p key={"p"+llave}>{llave}</p></a>
                 );
               }
           })

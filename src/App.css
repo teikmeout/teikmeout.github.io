@@ -42,6 +42,11 @@ a:hover {
   color: magenta;
 }
 
+.hover-nick:hover:after {
+  content: '  aka: Taka';
+  color: red;
+}
+
 .cont {
   /*border: 1px solid orange;*/
 }
