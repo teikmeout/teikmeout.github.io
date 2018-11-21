@@ -1,7 +1,9 @@
 # Teikmeout.com
 
 ## Technologies used
-- `create-react-app` - quick start for a react application
+- `create-react-app 2.0` - quick start for a react application (not ejected)
+- `react-scripts > 2.0` - to be able to compile SCSS
+- `node-sass` - to pick up SCSS during compilation time
 - `gh-pages` - npm package (helps publishing on github pages)
 
 ## Deploying a GitHub User Page or Project Page
