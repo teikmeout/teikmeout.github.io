@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Projects from './Projects';
-import Gists from './Gists';
-import Footer from './Footer';
+import Projects from './Projects/Projects';
+import Gists from './Gists/Gists';
+import Footer from './Footer/Footer';
+import Header from './Header/Header'
 import './App.css';
 
 class App extends Component {
@@ -9,7 +10,6 @@ class App extends Component {
     super();
     this.state = {
       currentPage: 'home',
-      name: 'Jonathan Ahrens',
       projects: [
         {
           name: 'Reask, classroom polling',
@@ -77,25 +77,10 @@ class App extends Component {
       .catch(err => console.log(err));
   }
 
-  handleHover() {
-    this.setState({
-      name: this.state.name == 'Jonathan Ahrens' ? 'Taka' : 'Jonathan Ahrens'
-    })
-  }
-
-
   render() {
     return (
       <div className="cont border">
-        <header>
-          <h1
-            onMouseEnter={() => this.handleHover()}
-            onMouseLeave={() => this.handleHover()}
-          >
-            {this.state.name}
-          </h1>
-          <a className="email" href="mailto:ahrens.jonathan@gmail.com">ahrens.jonathan@gmail.com</a>
-        </header>
+        <Header />
         <main>
           <h3>Full Stack Web Developer - Coding Instuctor</h3>
           <code>Brooklyn, NY</code>
