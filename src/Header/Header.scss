@@ -1,0 +1,17 @@
+$blueColor: #2196F3;
+
+header {
+  padding: 40px;
+  // background-color: #FFFFFF;
+  background-color: $blueColor;
+  color: #222;
+}
+
+.header--title {
+  padding: 0;
+  margin: 10px 0;
+}
+
+.email:link, .email:visited {
+  color: blue;
+}
