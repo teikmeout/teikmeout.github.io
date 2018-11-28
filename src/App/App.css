@@ -6,10 +6,6 @@ h3 {
   color: greenyellow;
 }
 
-.email:link, .email:visited {
-  color: blue;
-}
-
 .email:hover {
   color: lime;
 }
@@ -33,16 +29,6 @@ a:hover {
 .hover-nick:hover:after {
   content: '  aka: Taka';
   color: red;
-}
-
-.cont {
-  /*border: 1px solid orange;*/
-}
-
-.bottom-link:link, .bottom-link:visited {
-  /*background-color: red;*/
-  /*padding: 10px;*/
-  /*display: inline-block;*/
 }
 
 .contact-info {
