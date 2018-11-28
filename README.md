@@ -1,6 +1,9 @@
 # Teikmeout.com
 
 ## Technologies used
+- `react.js`
+- `es-lint` - linting via code editor using AirBnB stylyguide
+- `prettier` - for code formatting (adding commit hook soon)
 - `create-react-app 2.0` - quick start for a react application (not ejected)
 - `react-scripts > 2.0` - to be able to compile SCSS
 - `node-sass` - to pick up SCSS during compilation time
