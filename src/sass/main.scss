@@ -1,5 +1,9 @@
 @import 'normalize';
+@import './variables';
 
 body {
+  background-color: $color-background-default;
+  color: $color-text-light;
   font-family: sans-serif;
+  font-size: 150%;
 }
