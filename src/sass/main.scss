@@ -7,3 +7,9 @@ body {
   font-family: sans-serif;
   font-size: 150%;
 }
+
+@media (max-width: 500px) {
+  main {
+    font-size: 100%;
+  }
+}
