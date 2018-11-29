@@ -1,9 +1,9 @@
 import React from 'react';
-import './Projects.css';
+import './Projects.scss';
 
 function Projects(props) {
   return (
-    <section>
+    <section className="projects">
       <h3>Projects</h3>
       <div className="project-container">
         {props.projects.map((el, i) => {

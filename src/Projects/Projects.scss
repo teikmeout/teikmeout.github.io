@@ -1,0 +1,24 @@
+@import '../sass/variables';
+
+.projects {
+  background-color: transparent;
+
+  .proj-h4 {
+    color: $color-text-subtitle;
+  }
+
+  @media (max-width: 500px) {
+    .whole-proj {
+      width: 100%;
+    }
+
+    .proj-link {
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+
+
+
