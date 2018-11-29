@@ -1,5 +1,13 @@
 export default[
   {
+    "name": "J.Crew Fit Guides",
+    "desc": "Created a responsive reusable UI component in an NPM artifactory that is part of a major e-commerce website.",
+    "tech": "Next.js + React.js + SASS + Storybook + NPM Artifactory",
+    "imageurl": "image not available",
+    "link": "https://www.jcrew.com/womens_category/denim",
+    "github": "Private repository, no link"
+  },
+  {
     "name": "Reask, classroom polling",
     "desc": "Built a realtime web-app for use in classrooms that aggregates students questions giving teachers better insight into relevant topics in real time.",
     "tech": "Node.js + Express.js + React.js + Socket.io + PostgreSQL.",
