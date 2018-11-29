@@ -1,13 +1,17 @@
 @import '../sass/variables';
 
 .header {
-  color: $color-text-default;
-  background-color: $color-background-default;
+  color: $color-text-dark;
+  background-color: $color-background-secondary;
   padding: $margin-page;
 
   &--title {
       margin: 10px 0;
       padding: 0;
+  }
+
+  h3 {
+    color: $color-text-subtitle;
   }
 
   .email {
