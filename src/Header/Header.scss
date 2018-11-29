@@ -1,17 +1,22 @@
-$blueColor: #2196F3;
+@import '../sass/variables';
 
-header {
-  padding: 40px;
-  // background-color: #FFFFFF;
-  background-color: $blueColor;
-  color: #222;
-}
+.header {
+  color: $color-text-default;
+  background-color: $color-background-default;
+  padding: $margin-page;
 
-.header--title {
-  padding: 0;
-  margin: 10px 0;
-}
+  &--title {
+      margin: 10px 0;
+      padding: 0;
+  }
 
-.email:link, .email:visited {
-  color: blue;
+  .email {
+    &:link, &:visited {
+      color: $color-text-title;
+    }
+
+    &:hover {
+      color: $color-text-highlight;
+    }
+  }
 }
