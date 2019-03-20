@@ -24,7 +24,6 @@ class Header extends Component {
         >
           {this.state.name}
         </h1>
-        <a className="email" href="mailto:ahrens.jonathan@gmail.com">ahrens.jonathan@gmail.com</a>
         <h3>Software Engineer</h3>
         <code>Brooklyn, NY</code>
       </header>
